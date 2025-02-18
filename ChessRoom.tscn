@@ -1,0 +1,59 @@
+[gd_scene load_steps=14 format=3 uid="uid://bwse6gseu138v"]
+
+[ext_resource type="Script" path="res://chess_room.gd" id="1_scxwx"]
+[ext_resource type="Texture2D" uid="uid://chs04ydo5adas" path="res://Assets/WhitePawn.png" id="1_utpj8"]
+[ext_resource type="Texture2D" uid="uid://s7ilh6v80rcq" path="res://Assets/BlackPawn.png" id="2_u244o"]
+[ext_resource type="Texture2D" uid="uid://dyh54bbao28m0" path="res://Assets/WhiteKing.png" id="3_xgmko"]
+[ext_resource type="Texture2D" uid="uid://dgitis8nbk38y" path="res://Assets/BlackKing.png" id="4_cx6bl"]
+[ext_resource type="Texture2D" uid="uid://banfxfjky7jl3" path="res://Assets/WhiteQueen.png" id="5_qc1p0"]
+[ext_resource type="Texture2D" uid="uid://djrq4w0ewk8yg" path="res://Assets/BlackQueen.png" id="6_a1i1j"]
+[ext_resource type="Texture2D" uid="uid://gfyefycxql30" path="res://Assets/WhiteBishop.png" id="7_hyfch"]
+[ext_resource type="Texture2D" uid="uid://dcerbnods78yt" path="res://Assets/BlackBishop.png" id="8_36d14"]
+[ext_resource type="Texture2D" uid="uid://cjjhnw550aiac" path="res://Assets/WhiteRook.png" id="9_pxjae"]
+[ext_resource type="Texture2D" uid="uid://bjytakv4v5f8v" path="res://Assets/BlackRook.png" id="10_6cwol"]
+[ext_resource type="Texture2D" uid="uid://bv5j4msf73t81" path="res://Assets/WhiteKnight.png" id="11_xalbl"]
+[ext_resource type="Texture2D" uid="uid://bkhyxcmuavi7u" path="res://Assets/BlackKnight.png" id="12_etfnn"]
+
+[node name="ChessRoom" type="Node2D"]
+script = ExtResource("1_scxwx")
+
+[node name="PiecesContainer" type="Node2D" parent="."]
+
+[node name="WhitePawn" type="Sprite2D" parent="PiecesContainer"]
+texture = ExtResource("1_utpj8")
+
+[node name="BlackPawn" type="Sprite2D" parent="PiecesContainer"]
+texture = ExtResource("2_u244o")
+
+[node name="WhiteKing" type="Sprite2D" parent="PiecesContainer"]
+texture = ExtResource("3_xgmko")
+
+[node name="BlackKing" type="Sprite2D" parent="PiecesContainer"]
+texture = ExtResource("4_cx6bl")
+
+[node name="WhiteQueen" type="Sprite2D" parent="PiecesContainer"]
+texture = ExtResource("5_qc1p0")
+
+[node name="BlackQueen" type="Sprite2D" parent="PiecesContainer"]
+texture = ExtResource("6_a1i1j")
+
+[node name="WhiteBishop" type="Sprite2D" parent="PiecesContainer"]
+texture = ExtResource("7_hyfch")
+
+[node name="BlackBishop" type="Sprite2D" parent="PiecesContainer"]
+texture = ExtResource("8_36d14")
+
+[node name="WhiteRook" type="Sprite2D" parent="PiecesContainer"]
+texture = ExtResource("9_pxjae")
+
+[node name="BlackRook" type="Sprite2D" parent="PiecesContainer"]
+texture = ExtResource("10_6cwol")
+
+[node name="WhiteKnight" type="Sprite2D" parent="PiecesContainer"]
+texture = ExtResource("11_xalbl")
+
+[node name="BlackKnight" type="Sprite2D" parent="PiecesContainer"]
+texture = ExtResource("12_etfnn")
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 2

@@ -1,0 +1,69 @@
+[gd_scene load_steps=15 format=3 uid="uid://d0sc20ucjtb1m"]
+
+[ext_resource type="Script" path="res://room_manager.gd" id="1_munpq"]
+[ext_resource type="Texture2D" uid="uid://beabm450ygv0" path="res://Assets/TileMap.png" id="1_tue3g"]
+[ext_resource type="Texture2D" uid="uid://chs04ydo5adas" path="res://Assets/WhitePawn.png" id="3_of1om"]
+[ext_resource type="Texture2D" uid="uid://s7ilh6v80rcq" path="res://Assets/BlackPawn.png" id="4_d85ek"]
+[ext_resource type="Texture2D" uid="uid://dyh54bbao28m0" path="res://Assets/WhiteKing.png" id="5_amnit"]
+[ext_resource type="Texture2D" uid="uid://dgitis8nbk38y" path="res://Assets/BlackKing.png" id="6_6fw3j"]
+[ext_resource type="Texture2D" uid="uid://banfxfjky7jl3" path="res://Assets/WhiteQueen.png" id="7_pu83g"]
+[ext_resource type="Texture2D" uid="uid://djrq4w0ewk8yg" path="res://Assets/BlackQueen.png" id="8_vkred"]
+[ext_resource type="Texture2D" uid="uid://gfyefycxql30" path="res://Assets/WhiteBishop.png" id="9_xw7f0"]
+[ext_resource type="Texture2D" uid="uid://dcerbnods78yt" path="res://Assets/BlackBishop.png" id="10_p41u6"]
+[ext_resource type="Texture2D" uid="uid://cjjhnw550aiac" path="res://Assets/WhiteRook.png" id="11_esovn"]
+[ext_resource type="Texture2D" uid="uid://bjytakv4v5f8v" path="res://Assets/BlackRook.png" id="12_wle26"]
+[ext_resource type="Texture2D" uid="uid://bv5j4msf73t81" path="res://Assets/WhiteKnight.png" id="13_302du"]
+[ext_resource type="Texture2D" uid="uid://bkhyxcmuavi7u" path="res://Assets/BlackKnight.png" id="14_djlid"]
+
+[node name="Game" type="Node2D"]
+
+[node name="RoomManager" type="Node2D" parent="."]
+script = ExtResource("1_munpq")
+
+[node name="PiecesContainer" type="Node2D" parent="."]
+
+[node name="Tiles" type="Sprite2D" parent="PiecesContainer"]
+position = Vector2(1288, 1282)
+texture = ExtResource("1_tue3g")
+
+[node name="WhitePawn" type="Sprite2D" parent="PiecesContainer"]
+texture = ExtResource("3_of1om")
+
+[node name="BlackPawn" type="Sprite2D" parent="PiecesContainer"]
+texture = ExtResource("4_d85ek")
+
+[node name="WhiteKing" type="Sprite2D" parent="PiecesContainer"]
+texture = ExtResource("5_amnit")
+
+[node name="BlackKing" type="Sprite2D" parent="PiecesContainer"]
+texture = ExtResource("6_6fw3j")
+
+[node name="WhiteQueen" type="Sprite2D" parent="PiecesContainer"]
+texture = ExtResource("7_pu83g")
+
+[node name="BlackQueen" type="Sprite2D" parent="PiecesContainer"]
+texture = ExtResource("8_vkred")
+
+[node name="WhiteBishop" type="Sprite2D" parent="PiecesContainer"]
+texture = ExtResource("9_xw7f0")
+
+[node name="BlackBishop" type="Sprite2D" parent="PiecesContainer"]
+texture = ExtResource("10_p41u6")
+
+[node name="WhiteRook" type="Sprite2D" parent="PiecesContainer"]
+texture = ExtResource("11_esovn")
+
+[node name="BlackRook" type="Sprite2D" parent="PiecesContainer"]
+texture = ExtResource("12_wle26")
+
+[node name="WhiteKnight" type="Sprite2D" parent="PiecesContainer"]
+texture = ExtResource("13_302du")
+
+[node name="BlackKnight" type="Sprite2D" parent="PiecesContainer"]
+texture = ExtResource("14_djlid")
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
