@@ -60,6 +60,7 @@ texture = ExtResource("12_wle26")
 texture = ExtResource("13_302du")
 
 [node name="BlackKnight" type="Sprite2D" parent="PiecesContainer"]
+position = Vector2(2085, 2398)
 texture = ExtResource("14_djlid")
 
 [node name="UI" type="Control" parent="."]
